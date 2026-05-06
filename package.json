@@ -1,0 +1,18 @@
+{
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "npm run build --silent && node .\\dist\\consumer_send_sms.js",
+    "dev": "npm run dev --silent && node .\\dist\\consumer_send_sms.js",
+    "test": "npm run build --silent && node --test"
+  },
+  "devDependencies": {
+    "@types/amqplib": "^0.10.7",
+    "@types/node": "^24.6.2",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "amqplib": "^1.0.3",
+    "dotenv": "^17.4.2",
+    "twilio": "^5.8.2"
+  }
+}
